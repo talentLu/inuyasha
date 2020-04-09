@@ -8,6 +8,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * @author RudeCrab
  * @description 全局异常处理
@@ -26,6 +28,10 @@ public class ExceptionControllerAdvice {
         ObjectError objectError = e.getBindingResult().getAllErrors().get(0);
         // 然后提取错误提示信息进行返回
         return new ResultVO<>(ResultCode.VALIDATE_FAILED, objectError.getDefaultMessage());
+    }
+    @ExceptionHandler(Exception.class)
+    public ResultVO<String> ExceptionHandler(Exception e) {
+        return new ResultVO<>(e.getMessage());
     }
 
 }
