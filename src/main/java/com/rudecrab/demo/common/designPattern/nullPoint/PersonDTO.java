@@ -1,4 +1,4 @@
-package com.rudecrab.demo.common.nullPoint;
+package com.rudecrab.demo.common.designPattern.nullPoint;
 
 import lombok.Data;
 

@@ -1,7 +1,9 @@
-package designPattern;
+package com.rudecrab.demo.common.designPattern.observer;
 
 import java.util.ArrayList;
 import java.util.List;
+
+;
 
 /**
  * @Description TODO
@@ -9,7 +11,7 @@ import java.util.List;
  * @Date 2020/4/9 18:47
  * @Version 1.0
  **/
-public class FootballSubject implements Subject,Star {
+public class FootballSubject implements Subject, Star {
 
     List<Observer> observers = new ArrayList<>(16);
 

@@ -1,4 +1,4 @@
-package designPattern;
+package com.rudecrab.demo.common.designPattern.observer;
 
 /**
  * @Description 粉丝
@@ -11,7 +11,7 @@ public class Fans implements Observer {
     FootballSubject footballSubject;
     String name;
 
-    public Fans(FootballSubject footballSubject,String name) {
+    public Fans(FootballSubject footballSubject, String name) {
         this.footballSubject = footballSubject;
         this.name = name;
     }

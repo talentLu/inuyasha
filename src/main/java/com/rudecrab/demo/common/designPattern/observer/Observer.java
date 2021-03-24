@@ -1,4 +1,4 @@
-package designPattern;
+package com.rudecrab.demo.common.designPattern.observer;
 
 /**
  * @Description 观察者
